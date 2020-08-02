@@ -93,7 +93,7 @@
     <!-- Footer -->
     <div class="legal">
         <div class="copyright">
-            &copy; 2020<a href="javascript:void(0);"> UAP PARS BLOG WEB APP</a>
+            &copy; 2020<a href="javascript:void(0);"> UAP PARS BLOG APP</a>
         </div>
     </div>
     <!-- #Footer -->
