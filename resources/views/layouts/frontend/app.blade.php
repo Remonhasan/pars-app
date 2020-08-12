@@ -35,9 +35,13 @@
 
    @include('layouts.frontend.partial.footer')
 
-   <script src="{{asset('assets/frontend/js/jquery-3.1.1.min.jss')}}"></script>
+   <script
+     src="https://code.jquery.com/jquery-3.5.1.js"
+     integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+     crossorigin="anonymous"></script>
 
- <script src="{{asset('assets/frontend/js/tether.min.jss')}}"></script>
+
+ <script src="{{ asset('assets/frontend/js/tether.min.js') }}"></script>
 
  <script src="{{asset('assets/frontend/js/bootstrap.js')}}"></script>
 
