@@ -180,7 +180,7 @@ class PostController extends Controller
      Toastr::success('Post Successfully Updated :)','Success');
      return redirect()->route('author.post.index');
     }
-
+    
     /**
      * Remove the specified resource from storage.
      *
