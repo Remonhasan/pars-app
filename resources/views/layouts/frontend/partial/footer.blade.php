@@ -7,8 +7,8 @@
         <div class="footer-section">
 
           <a class="logo" href="#"><img src="images/logo.png" alt="Logo Image"></a>
-          <p class="copyright">Bona @ 2017. All rights reserved.</p>
-          <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+          <p class="copyright">UAP PARS WEBAPP @ 2020. All rights reserved.</p>
+          <p class="copyright">Designed by <a href="" target="_blank">Team UAP</a></p>
           <ul class="icons">
             <li><a href="#"><i class="ion-social-facebook-outline"></i></a></li>
             <li><a href="#"><i class="ion-social-twitter-outline"></i></a></li>
@@ -41,8 +41,9 @@
 
           <h4 class="title"><b>SUBSCRIBE</b></h4>
           <div class="input-area">
-            <form>
-              <input class="email-input" type="text" placeholder="Enter your email">
+            <form method="POST" action="{{route('subscriber.store')}}">
+              @csrf
+              <input class="email-input" name="email" type="email" placeholder="Enter your email">
               <button class="submit-btn" type="submit"><i class="icon ion-ios-email-outline"></i></button>
             </form>
           </div>
