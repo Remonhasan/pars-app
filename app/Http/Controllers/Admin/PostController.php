@@ -196,23 +196,25 @@ class PostController extends Controller
    }
    public function approval($id)
    {
-       $post = Post::find($id);
-       if ($post->is_approved == false)
-       {
-           $post->is_approved = true;
-           $post->save();
-           $post->user->notify(new AuthorPostApproved($post));
-           $subscribers = Subscriber::all();
+     $post = Post::find($id);
+      if ($post->is_approved == false)
+      {
+          $post->is_approved = true;
+          $post->save();
+          $post->user->notify(new AuthorPostApproved($post));
+
+          $subscribers = Subscriber::all();
           foreach ($subscribers as $subscriber)
-             {
-                 Notification::route('mail',$subscriber->email)
-                     ->notify(new NewPostNotify($post));
-             }
+          {
+              Notification::route('mail',$subscriber->email)
+                  ->notify(new NewPostNotify($post));
+          }
+
           Toastr::success('Post Successfully Approved :)','Success');
-       } else {
-           Toastr::info('This Post is already approved','Info');
-       }
-       return redirect()->back();
+      } else {
+          Toastr::info('This Post is already approved','Info');
+      }
+      return redirect()->back();
    }
 
     /**
