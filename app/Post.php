@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
-  public function user()
+   public function user()
   {
       return $this->belongsTo('App\User');
   }
@@ -18,5 +18,8 @@ class Post extends Model
       {
           return $this->belongsToMany('App\Tag')->withTimestamps();
       }
-
+  public function favourite_to_users()
+       {
+           return $this->belongsToMany('App\User')->withTimestamps();
+       }
 }
