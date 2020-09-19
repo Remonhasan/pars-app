@@ -66,6 +66,12 @@
                         <span>Pending Posts</span>
                     </a>
                 </li>
+                <li class="{{ Request::is('admin/favourite*') ? 'active' : '' }}">
+                      <a href="{{ route('admin.favourite.index') }}">
+                          <i class="material-icons">favorite</i>
+                          <span>Favorite Posts</span>
+                      </a>
+                  </li>
                 <li class="{{ Request::is('admin/subscriber*') ? 'active' : '' }}">
                       <a href="{{ route('admin.subscriber.index') }}">
                           <i class="material-icons">subscriptions</i>
@@ -105,6 +111,12 @@
                         <span>Posts</span>
                     </a>
                 </li>
+                <li class="{{ Request::is('author/favourite*') ? 'active' : '' }}">
+                      <a href="{{ route('author.favourite.index') }}">
+                          <i class="material-icons">favorite</i>
+                          <span>Favorite Posts</span>
+                      </a>
+                  </li>
                <li class="header">System</li>
                <li class="{{ Request::is('author/settings*') ? 'active' : '' }}">
                      <a href="{{ route('author.settings') }}">
