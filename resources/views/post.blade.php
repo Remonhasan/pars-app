@@ -181,9 +181,9 @@
                 <div class="col-lg-8 col-md-12">
                     <div class="comment-form">
                         @guest
-                            <p>For post a new comment. You need to login first. <a href="">Login</a></p>
+                            <p>For post a new comment. You need to login first. <a href="{{ route('login') }}">Login</a></p>
                         @else
-                            <form method="post" action="">
+                            <form method="post" action="{{ route('comment.store',$post->id) }}">
                                 @csrf
                                 <div class="row">
                                     <div class="col-sm-12">
@@ -199,9 +199,9 @@
                         @endguest
                     </div><!-- comment-form -->
 
-                  <h4><b>COMMENTS</b></h4>
-
-
+                  <h4><b>COMMENTS({{ $post->comments()->count() }})</b></h4>
+                   @if($post->comments->count() > 0)
+                          @foreach($post->comments as $comment)
                             <div class="commnets-area ">
 
                                 <div class="comment">
@@ -209,33 +209,33 @@
                                     <div class="post-info">
 
                                         <div class="left-area">
-                                            <a class="avatar" href="#"><img src="" alt="Profile Image"></a>
+                                            <a class="avatar" href="#"><img src="{{ Storage::disk('public')->url('profile/'.$comment->user->image) }}" alt="Profile Image"></a>
                                         </div>
 
                                         <div class="middle-area">
-                                            <a class="name" href="#"><b></b></a>
-                                            <h6 class="date"></h6>
+                                            <a class="name" href="#"><b>{{ $comment->user->name }}</b></a>
+                                            <h6 class="date">on {{ $comment->created_at->diffForHumans()}}</h6>
                                         </div>
 
                                     </div><!-- post-info -->
 
-                                    <p></p>
+                                    <p>{{ $comment->comment }}</p>
 
                                 </div>
 
                             </div><!-- commnets-area -->
-
-
+                         @endforeach
+                         @else
 
                     <div class="commnets-area ">
 
                         <div class="comment">
-                            <p>No Comment yet. Be the first :)</p>
+                            <p>No Comment yet. Make a comment !</p>
                     </div>
                     </div>
 
 
-
+                 @endif
                 </div><!-- col-lg-8 col-md-12 -->
 
             </div><!-- row -->
