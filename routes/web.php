@@ -20,6 +20,9 @@ Route::get('posts','PostController@index')->name('post.index');
 
 Route::get('post/{slug}','PostController@details')->name('post.details');
 
+Route::get('/category/{slug}','PostController@postByCategory')->name('category.posts');
+Route::get('/tag/{slug}','PostController@postByTag')->name('tag.posts');
+
 Route::post('subscriber','SubscriberController@store')->name('subscriber.store');
 
 Route::group(['middleware'=>['auth']], function (){
@@ -61,7 +64,7 @@ Route::group(['as'=>'author.','prefix'=>'author','namespace'=>'Author','middlewa
 
     Route::put('profile-update','SettingsController@updateProfile')->name('profile.update');
     Route::put('password-update','SettingsController@updatePassword')->name('password.update');
-    
+
     Route::resource('post','PostController');
 
     Route::get('/favourite','FavouriteController@index')->name('favourite.index');
@@ -69,4 +72,9 @@ Route::group(['as'=>'author.','prefix'=>'author','namespace'=>'Author','middlewa
     Route::get('comments','CommentController@index')->name('comment.index');
     Route::delete('comments/{id}','CommentController@destroy')->name('comment.destroy');
 
+});
+
+View::composer('layouts.frontend.partial.footer',function ($view) {
+    $categories = App\Category::all();
+    $view->with('categories',$categories);
 });
