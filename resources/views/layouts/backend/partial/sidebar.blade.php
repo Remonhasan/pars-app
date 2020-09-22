@@ -78,7 +78,13 @@
                             <span>Comments</span>
                         </a>
                     </li>
-                <li class="{{ Request::is('admin/subscriber*') ? 'active' : '' }}">
+                    <li class="{{ Request::is('admin/authors*') ? 'active' : '' }}">
+                          <a href="{{ route('admin.author.index') }}">
+                              <i class="material-icons">account_circle</i>
+                              <span>Authors</span>
+                          </a>
+                      </li>
+                 <li class="{{ Request::is('admin/subscriber*') ? 'active' : '' }}">
                       <a href="{{ route('admin.subscriber.index') }}">
                           <i class="material-icons">subscriptions</i>
                           <span>Subscribers</span>

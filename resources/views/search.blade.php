@@ -1,17 +1,13 @@
 @extends('layouts.frontend.app')
 
-@section('title','Category')
+@section('title')
+{{ $query }}
+@endsection
 
 @push('css')
     <link href="{{ asset('assets/frontend/css/category/styles.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/frontend/css/category/responsive.css') }}" rel="stylesheet">
     <style>
-        .slider {
-            height: 400px;
-            width: 100%;
-            background-image: url({{ Storage::disk('public')->url('category/'.$category->image) }});
-            background-size: cover;
-        }
         .favourite_posts{
             color: red;
         }
@@ -20,7 +16,7 @@
 
 @section('content')
     <div class="slider display-table center-text">
-        <h1 class="title display-table-cell"><b>{{ $category->name }}</b></h1>
+        <h1 class="title display-table-cell"><b>{{ $posts->count() }} Results for {{ $query }}</b></h1>
     </div><!-- slider -->
 
     <section class="blog-area section">
@@ -75,7 +71,6 @@
                             </div><!-- card -->
                         </div><!-- col-lg-4 col-md-6 -->
                     @endforelse
-
 
             </div><!-- row -->
 
