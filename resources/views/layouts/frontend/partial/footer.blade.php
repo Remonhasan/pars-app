@@ -6,16 +6,16 @@
       <div class="col-lg-4 col-md-6">
         <div class="footer-section">
 
-          <a class="logo" href="#"><img src="images/logo.png" alt="Logo Image"></a>
+           {{--<a class="logo" href="#"><img src="images/logo.png" alt="Logo Image"></a>--}}
           <p class="copyright">{{ env('APP_NAME') }} @ {{ date('Y') }}. All rights reserved.</p>
           <p class="copyright"><strong> Developed &amp; <i class="far fa-heart"></i> by </strong>
             <a href="https://github.com/Remonhasan" target="_blank">Remon Hasan</a></p>
           <ul class="icons">
-            <li><a href="#"><i class="ion-social-facebook-outline"></i></a></li>
-            <li><a href="#"><i class="ion-social-twitter-outline"></i></a></li>
-            <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
-            <li><a href="#"><i class="ion-social-vimeo-outline"></i></a></li>
-            <li><a href="#"><i class="ion-social-pinterest-outline"></i></a></li>
+            <li><a href="https://www.facebook.com/remonhasan1996"><i class="ion-social-facebook-outline"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/remonhasan/"><i class="ion-social-linkedin-outline"></i></a></li>
+            <li><a href="https://github.com/Remonhasan"><i class="ion-social-github-outline"></i></a></li>
+            <li><a href="https://www.stopstalk.com/user/profile/remonhasan"><i class="ion-social-vimeo-outline"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UC7c9kXOUX57Mz5zNMz1dSHg"><i class="ion-social-youtube-outline"></i></a></li>
           </ul>
 
         </div><!-- footer-section -->
