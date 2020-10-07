@@ -4,6 +4,9 @@
 |:--------------------|
 |This project based on the problems and resource sharing paltform blog of University of Asia Pacific. In this platform multiple users(students) can share their academic problems, suggest unique solutions of problems,share academic resources. This module and system will be applicable for all of Institutions for developing their Education Quality.This branch contains the containzerized versions of the projects.|
 
+| :pill: Implemented by Laravel |
+|:--------------------|
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
@@ -13,9 +16,8 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## About UAP Problem & Resource Sharing WebApp
-
-This projects based on the problems and resource sharing paltform blog of University of Asia Pacific. In this platform multiple users(students) can share their academic problems, suggest unique solutions of problems,share academic resources. Projects implemented with Laravel. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+| :pushpin: Installation and Packages follows laravel Documentation |
+|:--------------------|
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Powerful dependency injection container](https://laravel.com/docs/container).
@@ -23,40 +25,23 @@ This projects based on the problems and resource sharing paltform blog of Univer
 - Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
 - Database agnostic [schema migrations](https://laravel.com/docs/migrations).
 - [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
-
-## Learning Laravel
-
+- [Mail Notification using Mailtrap](https://blog.mailtrap.io/mailtrap-getting-started-guide/)
+- [Success/Error Notification using Toaster-brain2694](https://github.com/brian2694/laravel-toastr)
+- [image manupulation using Intervention](http://image.intervention.io/getting_started/installation)
 Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+| :white_check_mark: Tools |
+|:--------------------|
 
-## Laravel Sponsors
+-[Pages Customization using Atom](https://atom.io/)
+-[Implementation using PhpStorm](https://www.jetbrains.com/phpstorm/)
+-[Meterial Design Components](https://material.io/design/)
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
+| :ballot_box_with_check: Could be improved in future |
+|:--------------------|
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
+- **[Implementing Authority and students question forum]**
+- **[Implementing Real time chat communication]**
 
 ## Contributing
 
@@ -69,4 +54,4 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# uap-pars-app
+
