@@ -33,24 +33,17 @@ Laravel has the most extensive and thorough [documentation](https://laravel.com/
 
 | :white_check_mark: Tools |
 |:--------------------|
-
--[Pages Customization using Atom](https://atom.io/).
--[Implementation using PhpStorm](https://www.jetbrains.com/phpstorm/).
--[Meterial Design Components](https://material.io/design/).
+- [Pages Customization using Atom](https://atom.io/).
+- [Implementation using PhpStorm](https://www.jetbrains.com/phpstorm/).
+- [Meterial Design Components](https://material.io/design/).
 
 | :ballot_box_with_check: Could be improved in future |
 |:--------------------|
 
-- **[Implementing Authority and students question forum]**
-- **[Implementing Real time chat communication]**
+- **Implementing Authority and Students Questions forum**
+- **Implementing Real time Chat Communication**
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
 ## License
 
