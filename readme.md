@@ -1,6 +1,4 @@
-# UAP Problem and Resource Sharing WebApp
-
-![...](./uap-pars.webm)
+![UAP Problem and Resource Sharing App](https://github.com/Remonhasan/uap-pars-app/blob/master/uap-pars-github.png)
 
 | :bell: NOTIFICATION |
 |:--------------------|
