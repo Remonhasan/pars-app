@@ -25,17 +25,18 @@
 - Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
 - Database agnostic [schema migrations](https://laravel.com/docs/migrations).
 - [Robust background job processing](https://laravel.com/docs/queues).
-- [Mail Notification using Mailtrap](https://blog.mailtrap.io/mailtrap-getting-started-guide/)
-- [Success/Error Notification using Toaster-brain2694](https://github.com/brian2694/laravel-toastr)
-- [image manupulation using Intervention](http://image.intervention.io/getting_started/installation)
+- [Mail Notification using Mailtrap](https://blog.mailtrap.io/mailtrap-getting-started-guide/).
+- [Success/Error Notification using Toaster-brain2694](https://github.com/brian2694/laravel-toastr).
+- [image manupulation using Intervention](http://image.intervention.io/getting_started/installation).
+
 Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
 
 | :white_check_mark: Tools |
 |:--------------------|
 
--[Pages Customization using Atom](https://atom.io/)
--[Implementation using PhpStorm](https://www.jetbrains.com/phpstorm/)
--[Meterial Design Components](https://material.io/design/)
+-[Pages Customization using Atom](https://atom.io/).
+-[Implementation using PhpStorm](https://www.jetbrains.com/phpstorm/).
+-[Meterial Design Components](https://material.io/design/).
 
 | :ballot_box_with_check: Could be improved in future |
 |:--------------------|
