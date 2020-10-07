@@ -2,7 +2,7 @@
 
 | :bell: UAP Problem and Resource Sharing App |
 |:--------------------|
-|This projects based on the problems and resource sharing paltform blog of University of Asia Pacific. In this platform multiple users(students) can share their academic problems, suggest unique solutions of problems,share academic resources. This module and system will be applicable for all of Institution for developing their Education Quality.This branch contains the containzerized versions of the projects.|
+|This project based on the problems and resource sharing paltform blog of University of Asia Pacific. In this platform multiple users(students) can share their academic problems, suggest unique solutions of problems,share academic resources. This module and system will be applicable for all of Institutions for developing their Education Quality.This branch contains the containzerized versions of the projects.|
 
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
