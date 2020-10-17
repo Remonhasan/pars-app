@@ -1,4 +1,4 @@
-!(https://github.com/Remonhasan/uap-pars-app/blob/master/uap-pars-github.png)
+(https://github.com/Remonhasan/uap-pars-app/blob/master/uap-pars-github.png)
 
 | :bell: UAP Problem and Resource Sharing App |
 |:--------------------|
